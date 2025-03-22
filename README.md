@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img alt="<PROJECT NAME> logo" width="300px" src="./public/favicon.ico">
+</p>
+
+<h1 align="center">Template - Frontend Web Application</h1>
+
+<p align="center">
+  Template is a feature-rich frontend application built using modern technologies like React, TypeScript, and Vite. It offers a fast and scalable platform for developers to collaborate and share coding knowledge.
+</p>
+
+<p align="center">
+  <strong>Live demo:</strong> <a target="_blank" href="https://">Visit Template</a>
+</p>
+
+<p align="center">
+  <strong>Design files:</strong> <a target="_blank" href="https://www.figma.com/">Figma</a>
+</p>
+
+## Table of Contents
+
+- [Features](#features)
+- [Tech-Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running Locally](#running-locally)
+  - [Running Tests](#running-tests)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- **Fast and Scalable**: Built using Vite and React for optimal performance.
+- **Type-Safe**: Uses TypeScript for catching errors at compile time.
+- **Rich Routing**: Implements client-side routing with React Router.
+- **Form Management**: Handles form validation with React Hook Form.
+- **Code Quality**: Ensures consistent styling with ESLint, Prettier, and Stylelint.
+- **End-to-End Testing**: E2E tests using Playwright.
+
+## Tech-Stack
+
+- **React**: JavaScript library for building user interfaces
+- **TypeScript**: Typed superset of JavaScript for better maintainability
+- **Vite**: Fast build tool for modern web projects
+- **SCSS**: CSS preprocessor for enhanced styling capabilities
+- **React Router**: Client-side routing
+- **Axios**: Promise-based HTTP client for data fetching
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- **Node.js**: Ensure you have Node.js installed (>=18.x).
+- **pnpm**: Use `pnpm` as the package manager for consistency.
+
+### Installation
+
+Clone the repository and install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/
+cd Template
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev
+```
 
-## Learn More
+### Running Tests
 
-To learn more about Next.js, take a look at the following resources:
+For end-to-end testing with Playwright:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm test:e2e
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Linting and Formatting
 
-## Deploy on Vercel
+To ensure code quality:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+pnpm lint
+pnpm format
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Folder Structure
+
+This project uses the Feature-Sliced Design (FSD) architecture:
+
+```bash
+src/
+  ├── app/          # App-level settings, providers, and configuration
+  ├── entities/     # Business entities (e.g., User, Post)
+  ├── features/     # Application features (e.g., Auth, Profile)
+  ├── shared/       # Shared components, utils, styles, etc.
+  ├── pages/        # Top-level routes and layout components
+  ├── widgets/      # UI widgets for composition
+```
+
+## Contributing
+
+We welcome contributions! Follow these steps to get started:
+
+1. Fork the repository
+2. Create a new branch (git checkout -b feature/your-feature)
+3. Commit your changes (git commit -m 'Add your feature')
+4. Push the branch (git push origin feature/your-feature)
+5. Open a pull request
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
