@@ -68,14 +68,6 @@ Start the development server:
 pnpm dev
 ```
 
-### Running Tests
-
-For end-to-end testing with Playwright:
-
-```bash
-pnpm test:e2e
-```
-
 ### Linting and Formatting
 
 To ensure code quality:
