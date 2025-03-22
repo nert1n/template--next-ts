@@ -41,10 +41,6 @@
 		"*.tsx": [
 			"eslint --cache --fix",
 			"git add ."
-		],
-		"*.scss": [
-			"stylelint --fix",
-			"git add ."
 		]
 	}
 }
