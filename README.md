@@ -40,12 +40,8 @@
 
 ## Tech-Stack
 
-- **React**: JavaScript library for building user interfaces
+- **NEXT**: JavaScript library for building user interfaces
 - **TypeScript**: Typed superset of JavaScript for better maintainability
-- **Vite**: Fast build tool for modern web projects
-- **SCSS**: CSS preprocessor for enhanced styling capabilities
-- **React Router**: Client-side routing
-- **Axios**: Promise-based HTTP client for data fetching
 
 ## Getting Started
 
